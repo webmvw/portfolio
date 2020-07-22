@@ -1,0 +1,165 @@
+/*-----------------------------------------
+	Template Name: webmvw portfolio template
+    Author: webmvw
+    Version: 1.0	
+ ------------------------------------------*/
+
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.slicknav_menu{display: none;}
+
+	.logo{margin-top:10px;}
+
+	#navmenu ul li { margin-bottom: 0px; }
+
+	#navmenu ul li a {
+	    padding: 20px 5px;
+	    font-size: 15px;
+	}
+
+	#navmenu > ul > li > a::after {top: 80%;}
+
+	#navmenu > ul > li > a::before {top: 80%; }
+
+	.slider_text {padding: 78px 0px;}
+
+	.personal_details ul li h6 {font-size: 10px;}
+	.personal_details ul li h6 strong {padding: 6px 3px 5px 5px; }
+	.personal_details ul li h6 span {padding: 5px;}
+
+	div.candidatos .parcial .info .percentagem-num {font-size: 14px;}
+
+
+
+	.portfolio_item button {
+	    font-size: 12px;
+	    padding: 3px 13px;
+	    margin-right: -2px
+	}
+
+
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	
+	body {
+		
+	}
+	.slicknav_menu{display: block;}
+	.header{display: none;}
+
+	.slider_text {padding: 10px 0px;}
+	.slider_text h2 {font-size: 30px;}
+	.slider_text h3 {font-size: 30px;}
+
+	.about_left {margin-bottom: 30px;}
+
+	.profile_image img {
+	    margin-top: 0px;
+	    margin-bottom: 10px;
+	}
+
+	.education{ margin-bottom:30px; } 
+
+	.portfolio_item button {
+	    font-size: 10px;
+	    padding: 3px 8px;
+	    margin-right: -2px
+	}
+
+	.single_blog{ margin-bottom:30px; }
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	.slicknav_menu{display: none;}
+
+	.logo a { font-size: 16px; }
+
+	#navmenu ul li { margin-bottom: 0px; }
+
+	#navmenu ul li a {
+	    padding: 20px 2px;
+   		font-size: 13px;
+	}
+
+	#navmenu > ul > li > a::after {top: 80%;}
+
+	#navmenu > ul > li > a::before {top: 80%; }
+
+	.slider_text {padding: 78px 0px;}
+
+	.about_left {margin-bottom: 30px;}
+
+	.profile_image img {
+	    margin-top: 0px;
+	    margin-bottom: 10px;
+	}
+
+	.education{ margin-bottom:30px; } 
+
+	.portfolio_item button {
+	    font-size: 10px;
+	    padding: 3px 8px;
+	    margin-right: -2px
+	}
+
+	.single_blog{ margin-bottom:30px; }
+
+}
+

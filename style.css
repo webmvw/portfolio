@@ -1,0 +1,837 @@
+/* 
+    Template Name: webmvw portfolio template
+    Author: webmvw
+    Version: 1.0
+
+    Introduce all css style
+    1 header style
+    2 slider_area css
+    3 why hire me section
+    4 about section
+    5 resume section
+    6 counter section
+    7 services section 
+    8 portfolio section
+    9 hire me
+    10 latest blog
+    11 contact us
+    12 footer area
+    13 scroll top to bottom
+
+ */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+body{
+   font-family: 'Merriweather', serif; 
+   background: #fff;
+   position: relative; 
+}
+p{
+    font-family: 'Merriweather', serif;
+    color:#585858;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    color: rgb(35, 35, 35);
+}
+
+.slicknav_menu{display: none;}
+
+
+
+/*---------------------------------------------------------------
+    Template Name: webmvw portfolio template
+    1 header style
+-----------------------------------------------------------------*/
+.header_area{background: url(images/bf-right.jpg) no-repeat;
+    background-size:cover; 
+}
+.header{background: rgba(0, 0, 0, 0.56);position: fixed;width:100%;z-index: 999999}
+
+.logo{margin-top:20px;}
+.logo a {
+    color: #f1f1f1;
+    margin: 10px 0px;
+    transition: .5s;
+    -webkit-transition:.5s;
+    text-decoration: none;
+    font-size: 20px;
+}
+.logo a:hover{
+    color: #27A000;
+}
+#navmenu ul{
+    position: relative;
+    margin-top:-13px;
+}
+#navmenu ul li{
+    margin-left: 5px;
+    list-style: none;
+    float: left;
+    margin-bottom:10px;
+}
+#navmenu ul li a{
+    text-decoration: none;
+    padding:20px 10px;
+    display: block;
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    display: block;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    z-index: 99;
+    margin-top:15px;
+}
+#navmenu ul li a:hover
+{
+    color: #27A000;
+}
+#navmenu > ul > li > a:after
+{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    right: 0;
+    top:100%;
+    background: #fff;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    mix-blend-mode:multiply;
+    z-index: -99;
+}
+#navmenu > ul > li > a:before
+{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    left: 0;
+    top:100%;
+    background: #27A000;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    mix-blend-mode:multiply;
+    z-index: -99;
+}
+
+#navmenu > ul > li:hover > a:before{
+    width: 50%;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+#navmenu > ul > li:hover > a:after{
+    width:50%;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+#navmenu > ul > li.active > a:before{
+    width: 50%;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+#navmenu > ul > li.active > a:after{
+    width:50%;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+
+
+
+
+    
+/*--------------------------------------------------------------
+    Template Name: webmvw portfolio template
+    2 slider_area css
+ ---------------------------------------------------------------*/
+
+.slider_text{padding:170px 0px;}
+.slider_text h2{color: #fff;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;}
+.slider_text h3{color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;}
+.slider_text p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}    
+.slider_text a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    margin-left: 10px;
+    display:inline-block;
+    position: relative;
+   z-index: 11;
+}
+.slider_text a:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #27A000;
+    color: #fff;
+    transform: scale(0);
+    -webkit-transform:scale(0);
+    transition: .5s;
+    -webkit-transition:.5s;
+     z-index: -11;
+}
+.slider_text a:hover:after{
+    transform: scale(1);
+}
+
+
+
+
+
+/* --------------------------------------------------------------
+    Template Name: webmvw portfolio template
+    3 why hire me section 
+-----------------------------------------------------------------*/
+.why_hire_me_area{padding: 60px 0px;background: #fff}
+.why_hire_me h2{
+    color:#585858;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0px;
+    position: relative;
+}
+.why_hire_me h2:before{content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0%, -50%);
+    width: 100%;
+    border-bottom: 1px solid rgb(204, 204, 204);}
+.why_hire_me h2 span{background: #fff;
+    position: relative;
+    padding: 0px 10px;}
+
+.why_hire_me p{
+    color: #585858;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+}
+
+
+
+
+/*--------------------------------------------------------- 
+    Template Name: webmvw portfolio template
+    4 about section 
+-----------------------------------------------------------*/
+.about_area{
+    background: #fff;
+   padding: 60px 0px;
+}
+.about_me_text h2{color:#585858;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0px;
+    position: relative;}
+.about_me_text h2:before{content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0%, -50%);
+    width: 100%;
+    border-bottom: 1px solid rgb(204, 204, 204);}
+.about_me_text h2 span{background: #fff;
+    position: relative;
+    padding: 0px 10px;}
+
+.about_left{
+    border: 1px solid #ddd;
+   box-shadow: rgba(39, 160, 0, 0.42) 0px 0px 24px 0px;
+    padding: 30px 10px;
+}
+
+.profile_image img{margin-top:36px;border:1px solid #ddd;}
+.personal_details{margin-left:20px;}
+.personal_details h3{padding-bottom: 7px;
+    font-size: 20px;
+    color: #585858;
+    font-family: Arial, helvetica, Sans-serif;
+}
+.personal_details ul{padding: 0px;}
+.personal_details ul li{margin-bottom: 10px;}
+.personal_details ul li h6{font-size: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    padding: 6px 0px;}
+.personal_details ul li h6 strong{background-color: rgb(240, 240, 240);
+    letter-spacing: 1px;
+        padding: 5px 6px 6px 10px;
+    border-right: 1px solid rgb(204, 204, 204);}
+.personal_details ul li h6 span{ padding: 10px;}
+.about_left p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #585858;
+    margin-left:15px;
+    margin-bottom: 20px;
+}
+.about_left .cv a{
+    color: #27A000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #27A000;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    z-index: 12;
+}
+.about_left .cv a:hover{
+    color: #585858;
+}
+.about_left .cv a:after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #27A000;
+    transform: scale(0);
+    -webkit-transform:scale(0);
+    transition: .5s;
+    -webkit-transition:.5s;
+    z-index: -11;
+    
+}
+.about_left .cv a:hover:after{
+    transform: scale(1);
+    -webkit-transform:scale(1);
+   
+}
+
+/*about right skill*/
+.about_right{
+    font-family: Arial, helvetica, Sans-serif; 
+    padding-top: 30px;
+    padding-bottom:5px;
+    box-shadow: rgba(39, 160, 0, 0.42) 0px 0px 24px 0px;
+    border: 1px solid #ddd;
+}
+.about_right h3{border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: #585858;
+}
+
+div.candidatos {
+    position:relative;
+    height: 40px;
+    margin:40px 20px;
+    padding-left:50px;
+   
+}
+.candidatos i{
+	font-size:25px;
+	text-align:center;
+	border:2px solid #27A000;
+	padding:10px;
+	border-radius:50%;
+	color:#27A000;
+    cursor:pointer;
+    transition: .5s;
+    -webkit-transition:.5s;
+}
+.candidatos i:hover{
+    font-size: 35px;
+}
+div.candidatos i {
+    position:absolute;
+    top:0;
+    left:0;
+    
+}
+div.candidatos .parcial {
+    display:inline-block;
+    width:100%;
+    height:40px;
+    vertical-align:middle;
+    padding: 0 0 0 10px;
+}
+div.candidatos .parcial .info {
+    height:15px;
+    position: relative;
+}
+div.candidatos .parcial .info > div {
+    float:left;
+}
+div.candidatos .parcial .info .nome {
+    position: absolute;
+    top: 0;
+    left:0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #192D49;
+}
+div.candidatos .parcial .info .eleito, div.candidatos .parcial .info .segundo-turno {
+    color: #fff;
+    padding: 0 5px 2px 5px;
+    border-radius: 2px;
+}
+div.candidatos .parcial .info .percentagem-num {
+    position: absolute;
+    top:0;
+    right:0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #192D49;
+}
+div.candidatos .parcial .progressBar {
+    position:relative;
+    width:100%;
+    height:7px;
+    margin:5px 0 2px;
+    border-radius:10px;
+    background: #e7e7e7;
+}
+div.candidatos .parcial .progressBar .percentagem {
+    position:absolute;
+    top:0;
+    left:0;
+    height:7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #A4B5C0;
+    -webkit-transition: 5s all;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: animationProgress;
+}
+div.candidatos.brasil .parcial .percentagem {
+    background-color:#56BA62;
+}
+div.candidatos.uruguai .parcial .percentagem {
+    background-color:#4086CD;
+}
+div.candidatos.italia .parcial .percentagem {
+    background-color:#C44738;
+}
+div.candidatos.alemanha .parcial .percentagem {
+    background-color:#272726;
+}
+.percentual {
+    -webkit-transition: 5s all;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: animationProgress;
+    transition: 5s all;
+    animation-duration: 5s;
+    animation-name: animationProgress;
+}
+@-webkit-keyframes animationProgress {
+    from {
+        width:0;
+    }
+}
+@keyframes animationProgress {
+    from {
+        width:0;
+    }
+}
+
+
+
+/*-------------------------------------------------- 
+    Template Name: webmvw portfolio template
+    5 resume section 
+----------------------------------------------------*/
+.resume_section_area{background: #fff;
+   padding: 60px 0px;} 
+.resume_title h2{color:#585858;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0px;
+    position: relative;}
+.resume_title h2:before{content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0%, -50%);
+    width: 100%;
+    border-bottom: 1px solid rgb(204, 204, 204);}
+.resume_title h2 span{background: #fff;
+    position: relative;
+    padding: 0px 10px;}  
+.education{box-shadow: rgba(39, 160, 0, 0.42) 0px 0px 24px 0px;
+    padding: 30px 20px;border:1px solid #ddd;}
+.education h2{background-color:#449D44;
+    color: rgb(255, 255, 255);
+    padding:5px 0px;
+    font-family: Arial, helvetica, Sans-serif;
+    font-size: 20px;
+    margin-bottom:20px;
+}
+.education ul li{position: relative;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    margin-bottom: -10px;
+    border-left: 1px solid rgb(244, 244, 244);}
+.education ul li:after{position: absolute;
+    content: "";
+    left: -6px;
+    top: 0px;
+    width: 12px;
+    height: 12px;
+    background-color:#449D44;
+    border-radius: 50%;
+    border-image: initial;}    
+.education ul li h5{    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;    font-size: 14px;}
+.education ul li h6{color: rgb(158, 158, 158);
+    font-weight: 500;
+    margin-bottom: 15px;font-size: 12px}
+.education ul li span{color: rgb(214, 177, 97);font-size: 15px;}
+.education ul li p{margin-top: 15px;margin: 0px 0px 10px;font-size: 16px}
+
+.experience{box-shadow:rgba(39, 160, 0, 0.42) 0px 0px 24px 0px;
+    padding: 30px 20px;border:1px solid #ddd;}
+.experience h2{background-color:#449D44;
+    color: rgb(255, 255, 255);
+    padding:5px 0px;
+    font-family: Arial, helvetica, Sans-serif;
+    font-size: 20px;
+    margin-bottom:20px;}
+.experience ul li{position: relative;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    margin-bottom: -10px;
+    border-left: 1px solid rgb(244, 244, 244);}
+.experience ul li:after{position: absolute;
+    content: "";
+    left: -6px;
+    top: 0px;
+    width: 12px;
+    height: 12px;
+    background-color:#449D44;
+    border-radius: 50%;
+    border-image: initial;}
+.experience ul li h5{   font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;    font-size: 14px;}
+.experience ul li h6{color: rgb(158, 158, 158);
+    font-weight: 500;
+    margin-bottom: 15px;font-size: 12px}
+.experience ul li span{color: rgb(214, 177, 97);font-size: 15px;}
+.experience ul li p{margin-top: 15px;margin: 0px 0px 10px;font-size: 16px}
+
+
+
+
+/*--------------------------------------------------- 
+    Template Name: webmvw portfolio template
+    6 counter section
+----------------------------------------------------*/
+.counter_area{background-color:#10161E;padding: 60px 0px; }
+.single_counter i.fa{color: rgb(214, 177, 97);
+    transition: all 0.3s;font-size: 40px}
+.single_counter i.fa:hover{transform: scale(1.1);}    
+.single_counter h5{font-weight: 800;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;font-size: 30px;
+    margin-top: 10px;}
+.single_counter h6{color: rgb(158, 158, 158);
+    font-weight: 600;
+    letter-spacing: 2px;}
+
+
+/*----------------------------------------------------- 
+    Template Name: webmvw portfolio template
+    7 services section 
+------------------------------------------------------*/
+.services_area{background: #fff;padding:60px 0px;}
+.services_title h2{color:#585858;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0px;
+    position: relative;}
+.services_title h2:before{content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0%, -50%);
+    width: 100%;
+    border-bottom: 1px solid rgb(204, 204, 204);}
+.services_title h2 span{background: #fff;
+    position: relative;
+    padding: 0px 10px;}
+
+.single_services{    box-shadow: rgba(39, 160, 0, 0.42) 0px 0px 20px 0px;
+    padding: 20px 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;}
+.single_services h2{background-color:#449D44;
+    color: rgb(255, 255, 255);
+    padding:5px 0px;
+    font-family: Arial, helvetica, Sans-serif;
+    font-size: 20px;
+    margin-bottom:20px;}
+.single_services i.fa{    color: rgb(214, 177, 97);
+    font-size: 35px;
+    box-shadow: rgb(221, 229, 238) 0px 0px 20px 0px;
+    padding: 15px;
+    border-radius: 50px;}
+
+
+
+
+/*--------------------------------------------------- 
+    Template Name: webmvw portfolio template
+    8 portfolio section
+-----------------------------------------------------*/
+.portfolio_area{background: #fff;padding:60px 0px;}
+.portfolio_title h2{color:#585858;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0px;
+    position: relative;}
+.portfolio_title h2:before{content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0%, -50%);
+    width: 100%;
+    border-bottom: 1px solid rgb(204, 204, 204);}
+.portfolio_title h2 span{background: #fff;
+    position: relative;
+    padding: 0px 10px;}
+.portfolio_item{margin-bottom:40px;}    
+.portfolio_item button{cursor:pointer;}    
+.portfolio_item button:first-child{border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;}
+.portfolio_item button:last-child{border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;}  
+/*-- mixitup css --*/
+.portfolio_item .mix{display:none;} 
+
+.single_portfolio{position: relative;}    
+.overlay{position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 140, 186, 0.77);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;}
+.single_portfolio:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+.text {
+  white-space: nowrap; 
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+.text a{display: block; text-align: center;}
+.text a i.fa{color:#fff;font-size:30px;margin-bottom:10px; }
+.text h5{color:#fff;}  
+
+
+
+
+/*--------------------------------------------------- 
+    Template Name: webmvw portfolio template
+    9 hire me
+-----------------------------------------------------*/
+.hire_me_area{background-color:#10161E;padding: 60px 0px; }
+.hire_me_text h3{    color: #fff;
+    padding:20px 0px;}
+
+
+/*--------------------------------------------------- 
+    Template Name: webmvw portfolio template
+    10 latest blog
+-----------------------------------------------------*/
+.latest_blog_area{
+    background: #fff;
+   padding: 60px 0px;
+}
+.latest_blog_title h2{color:#585858;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0px;
+    position: relative;}
+.latest_blog_title h2:before{content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0%, -50%);
+    width: 100%;
+    border-bottom: 1px solid rgb(204, 204, 204);}
+.latest_blog_title h2 span{background: #fff;
+    position: relative;
+    padding: 0px 10px;}
+.single_blog{ box-shadow: rgba(39, 160, 0, 0.42) 0px 0px 20px 0px;
+    padding: 10px;
+    border: 1px solid #ddd;}    
+.single_blog img{margin-bottom:20px;}    
+
+
+
+/*--------------------------------------------------- 
+    Template Name: webmvw portfolio template
+    11 contact us
+-----------------------------------------------------*/
+.contact_area{
+    background:url(images/contact-bg.png) no-repeat fixed;
+    background-size:cover; 
+   padding: 60px 0px;
+}
+.contact_us_title h2{color:#585858;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0px;
+    position: relative;}
+.contact_us_title h2:before{content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0%, -50%);
+    width: 100%;
+    border-bottom: 1px solid rgb(204, 204, 204);}
+.contact_us_title h2 span{background: #fff;
+    position: relative;
+    padding: 0px 10px;}
+.single_contact_info{padding:20px 0px;}  
+.single_contact_info h5{color:#fff;}  
+.single_contact_info i.fa{    color: rgb(214, 177, 97);
+    font-size: 35px;
+    box-shadow: rgb(221, 229, 238) 0px 0px 20px 0px;
+    padding: 15px;
+    border-radius: 50px;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 25px;
+}  
+.contact_form{padding:20px 0px;}  
+
+
+
+
+/*--------------------------------------------------- 
+    Template Name: webmvw portfolio template
+    12 footer area
+-----------------------------------------------------*/
+.footer_area{background-color:#10161E;padding: 60px 0px; }
+.footer_info h2{color: #f1f1f1;
+    margin: 10px 0px;}
+.social_links a i.fa{    color: rgb(214, 177, 97);
+    font-size: 20px;
+    box-shadow: rgb(221, 229, 238) 0px 0px 20px 0px;
+    padding: 10px;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin: 20px 12px}    
+.copyright_text p{    color: #fff;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 14px;}    
+
+
+
+/*--------------------------------------------------- 
+    Template Name: webmvw portfolio template
+    13 scroll top to bottom
+-----------------------------------------------------*/
+.scrollToTop{
+background:url(images/up-arrow.png) no-repeat scroll 0 0;
+background-size:100%;
+bottom: 20px;
+color: #444;
+display: none;
+font-weight: bold;
+height: 50px;
+padding: 10px;
+position: fixed;
+right: 40px;
+text-align: center;
+text-decoration: none;
+text-indent: -9999px;
+width: 50px;
+
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
+a.scrollToTop{outline:0;}    
